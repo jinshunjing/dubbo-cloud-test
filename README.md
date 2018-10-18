@@ -1,0 +1,2 @@
+# ltctest
+LTC, Litecoin
