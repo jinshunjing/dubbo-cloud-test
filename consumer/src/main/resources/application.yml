@@ -1,0 +1,24 @@
+# Server
+server:
+  port: 8673
+
+# dubbo
+dubbo:
+  registry:
+    address: spring-cloud://127.0.0.1
+  cloud:
+    subscribed-services: my-dubbo-provider
+  protocol:
+    name: dubbo
+    port: -1
+
+# nacos
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: my-dubbo-consumer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
